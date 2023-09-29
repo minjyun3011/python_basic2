@@ -22,5 +22,6 @@ def main():
     fukuoka_temperature = [info['temperature'] for info in weather_information if info['prefecture'] == '福岡県']
     print(f'福岡県の平均気温: {sum(fukuoka_temperature) / len(fukuoka_temperature):.1f}℃')
 
-    if __name__ == '__main__':
-        main()
+
+if __name__ == '__main__':
+    main()
